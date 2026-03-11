@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            font-family: Georgia;
+            border: 20px solid rgb(4, 0, 255);
+            padding: 10px;
+            border-image-source: url('/anexo/Borda\(1\).png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url(/anexo/pngtree-white-cloud-sea-purple-mountain-forest-watercolor-mountain-cloud-background-image_738293.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: animate 20s linear infinite;
+        }
+
+        @keyframes animate {
+          to {
+            background-position-x: -500px;
+          }  
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+    <br>
+    <h2>IMAGEM</h2>
+</body>
+</html>

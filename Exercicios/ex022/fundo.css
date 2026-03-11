@@ -1,0 +1,18 @@
+div.quadrado {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    background-color: lightslategray;
+    display: inline-block;
+    transition: ease-in-out .7s;
+
+    
+}
+
+.quadrado:hover {
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.05);
+        transition: ease-in-out .7s;
+
+}

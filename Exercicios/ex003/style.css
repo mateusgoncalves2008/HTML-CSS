@@ -1,0 +1,31 @@
+p {
+    color: blue;
+}
+
+#phtml {
+    color: black;
+}
+#pcss {
+    color: red;
+}
+#pcssu {
+    color: rgb(130, 48, 121)
+}
+#ppsm {
+    color:rgb(19, 186, 119)
+}
+#pgk {
+    color:rgb(180, 26, 26)
+}
+.minha-imagem {
+    width: 150px;
+    height: auto;
+}
+.goku {
+    width: 150px;
+    height: auto;
+}
+.paisagem {
+    width: 150px;
+    height: auto;
+}

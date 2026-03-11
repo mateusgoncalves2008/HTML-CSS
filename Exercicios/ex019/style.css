@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é # (só pode um elemento)
+    em HTML é class = em CSS é . (pode vários elementos)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    background-color: #d6fde9;
+}
+
+.criando {
+    background-color: #3c805e;
+    font-family: Georgia;
+    color: white;
+    text-align: center;
+}
+
+.aprendendo {
+    color: #1e402f;
+}
+
+p {
+    font-family: Work Sans;
+}
+
+.basico {
+    color: #069008;
+}
+
+.Intermediario {
+    color: #cad105;
+}
+
+.avancado {
+    color: #a03105;
+}
+
+.destaque {
+    background-color: #f2f7554a;
+}
