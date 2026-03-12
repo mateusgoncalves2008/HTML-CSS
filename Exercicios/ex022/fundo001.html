@@ -4,19 +4,57 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Teste de Imagem de fundo</title>
-        <link rel="stylesheet" href="fundo.css" />
+        <style>
+            body {
+                background-image: url("img/pattern002.png");
+
+                margin: 0;
+            }
+
+            main {
+                padding: 4rem 2rem 0rem 2.3rem;
+                gap: 1rem;
+                width: 91%;
+                display: grid;
+                grid-template-columns: repeat(3, 2fr);
+
+                .quadrado {
+                    width: 100%;
+                    border: 2px solid black;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 6px;
+                    background-color: lightslategray;
+                    display: grid;
+                    grid-template-columns: repeat(2, 2fr);
+                    transition: ease-in-out 0.7s;
+                }
+
+                .quadrado:hover {
+                    background-color: rgb(255, 255, 255);
+                    transform: scale(1.05);
+                    transition: ease-in-out 0.7s;
+                }
+
+                #ql {
+                    background-color: black;
+                }
+
+                #qll {
+                    background-image: linear-gradient(to bottom, white, black);
+                }
+
+                #qlll {
+                    background-image: url("img/pattern004.png");
+                }
+            }
+        </style>
     </head>
     <body>
         <main>
-            <section>
-                <div class="quadrado"></div>
-                <div class="quadrado"></div>
-                <div class="quadrado"></div>
-            </section>
-            
-            <section>
-
-            </section>
+            <div class="quadrado" id="ql"></div>
+            <div class="quadrado" id="qll"></div>
+            <div class="quadrado" id="qlll"></div>
         </main>
     </body>
 </html>
