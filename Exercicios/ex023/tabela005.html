@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabelas</title>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table {
+                width: 500px;
+                border-collapse: collapse;
+            }
+
+            caption {
+                font-size: 1.3em;
+                font-weight: bolder;
+                padding: 8px;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
+            }
+
+            .cnome {
+                background-color: rgb(164, 164, 164);
+            }
+
+            .cgrupo {
+                background-color: blanchedalmond;
+            }
+
+            .cprof {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <colgroup>
+                <col class="cnome" />
+                <col class="cgrupo" span="2" />
+                <col class="cprof" />
+            </colgroup>
+
+            <caption>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">idade</th>
+                    <th scope="col">Profissão</th>
+                </tr>
+
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+
+                <tr>
+                    <td>Clúdio</td>
+                    <td>M</td>
+                    <td>23</td>
+                    <td>Medico</td>
+                </tr>
+
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>23</td>
+                    <td>Professor</td>
+                </tr>
+
+                <tr>
+                    <td>Mateus</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Programador</td>
+                </tr>
+
+                <tr>
+                    <td>Carlos</td>
+                    <td>M</td>
+                    <td>16</td>
+                    <td>Suporte</td>
+                </tr>
+
+                <tr>
+                    <td>Pedro</td>
+                    <td>M</td>
+                    <td>20</td>
+                    <td>Conzinheiro</td>
+                </tr>
+            </caption>
+        </table>
+    </body>
+</html>
