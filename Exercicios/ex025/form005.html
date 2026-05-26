@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkbox e Radio button</title>
+        <style>
+            .linguagens {
+                display: grid;
+                grid-template-columns: if(
+                    media(width <= 600px): 1fr;
+                     media(width <= 1200px):1fr ;
+                        else: repeat(1fr)
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Formulários</h1>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+               
+
+                <div class="sexo">
+                    <label for="imas">Masculino</label>
+                    <input type="radio" name="sexo" id="imas" /> <br />
+
+                    <label for="ifen">Feminino</label>
+                    <input type="radio" name="sexo" id="ifen" checked/> <br />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <legend>Linguagem favorita</legend>
+
+                <div class="linguagens">
+                    <input type="checkbox" name="javascript" id="ijs" />
+                    <label for="ijs">JavaScript</label>
+
+                    <input type="checkbox" name="typeScript" id="itypescript" />
+                    <label for="itypescript">TypeScript</label>
+
+                    <input type="checkbox" name="php" id="iphp" />
+                    <label for="iphp">PHP</label>
+
+                    <input type="checkbox" name="ruby" id="iruby" />
+                    <label for="iruby">Ruby</label>
+
+                    <input type="checkbox" name="java" id="ijava" />
+                    <label for="ijava">Java</label>
+
+                    <input type="checkbox" name="c#" id="ic#" />
+                    <label for="ic#">C#</label>
+                </div>
+            </fieldset>
+
+            <br />
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
