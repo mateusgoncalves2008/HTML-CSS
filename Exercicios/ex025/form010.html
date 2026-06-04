@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+        <style>
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iano">Em que ano você nasceu? </label>
+                <input
+                    type="number"
+                    name="ano"
+                    id="iano"
+                    min="1900"
+                    max="2020"
+                    oninput="calcIdade()"
+                />
+            </p>
+
+            <p>--------------------------------------------------</p>
+
+            <p>
+                <label for="iidade">Sua idade ê: </label>
+                <output id="iidade">0</output>
+            </p>
+
+            <p>--------------------------------------------------</p>
+
+            <p>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+            </p>
+
+            <p>
+                ------------------------------------------------------------------------------------
+            </p>
+
+            <br />
+            <br />
+
+            <form>
+                <input type="number" id="numero1"  oninput="ires.innerHTML = Number(numero1.value) + Number(numero2.value)"/> +
+                <input type="number" id="numero2"  oninput="ires.innerHTML = Number(numero1.value) + Number(numero2.value)" />
+
+                <p>
+                    O resultado é:
+                    <output id="ires">0</output>
+                </p>
+            </form>
+        </form>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear();
+                iidade.innerHTML = Number(atual) - Number(iano.value);
+            }
+        </script>
+    </body>
+</html>
