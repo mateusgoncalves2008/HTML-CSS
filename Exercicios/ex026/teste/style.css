@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: grey;
+
+    h1 {
+        text-align: center;
+    }
+}
+#burguer {
+    background-color: rgb(49, 49, 49);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(86, 86, 86);
+        color: white;
+        border-top: 2px solid rgb(189, 189, 189);
+        transition: 0.6s;
+    }
+
+    a:hover {
+        background-color: grey;
+        transition: 0.5s;
+    }
+}
+
+main {
+    section {
+        margin: auto;
+        width: 90vw;
+        background-color: rgb(210, 210, 210);
+    }
+}

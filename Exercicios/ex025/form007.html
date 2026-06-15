@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <!-- --------------select-------------- -->
+
+            <p>
+                <label for="iest">Estado: </label>
+                <select name="estado" id="iest">
+                    <optgroup label="Região Norte">
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="AP">Amapá</option>
+                        <option value="BA">Bahia</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                </select>
+            </p>
+            <!-- --------------Fim Select-------------- -->
+
+            <!-- --------------datalist-------------- -->
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof" />
+
+                <datalist id="listprof">
+                    <option value="T.I">Programação</option>
+                    <option value="MEDIC">Medicina</option>
+                    <option value="ESPORT">Futebol</option>
+                </datalist>
+            </p>
+            <!-- --------------Fim datalist-------------- -->
+
+            <!-- --------------textarea-------------- -->
+            <p>
+                <label for="imsg">Mensagem: </label>
+                <br />
+                <textarea
+                    name="msg"
+                    id="imsg"
+                    cols="20"
+                    rows="3"
+                    placeholder="Deixe um comentário"
+                ></textarea>
+            </p>
+
+            <!-- --------------Fim textarea-------------- -->
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
