@@ -36,11 +36,6 @@ header {
     color: black;
 }
 
-#burguer:active {
-    background-color: white;
-    color: black;
-}
-
 menu {
     display: none;
 
