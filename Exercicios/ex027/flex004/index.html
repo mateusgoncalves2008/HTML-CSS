@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexible Box</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            .conteiner {
+                height: 300px;
+                background-color: #80f96abd;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: stretch; /*Vertical*/
+                justify-content: space-around; /*Horizontal*/
+            }
+
+            .item {
+                text-align: center;
+                border: 2px solid black;
+                background-color: #f96a6acf;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </body>
+</html>
