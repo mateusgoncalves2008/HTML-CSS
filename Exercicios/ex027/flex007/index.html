@@ -9,30 +9,37 @@
                 background-color: red;
                 display: flex;
                 flex-flow: row wrap;
-                align-content: center;
-                height: 400px;
+                justify-content: center;
             }
 
             .item {
                 text-align: center;
                 border: 2px solid black;
                 background-color: yellow;
-                padding: 40px;
+                padding: 20px;
+            }
+
+            #i1 {
+                order: 0;
+            }
+
+            #i2 {
+                order: 0;
+            }
+
+/* A propriedade order serve pra você controlar os elementos visual sem modificar no document HTML */
+/* Ele funciana assim: quanto menor o número for, em primeiro ele vai ficar. Ex: (Embaixo) */
+
+            #i3 {
+                order: -1;
             }
         </style>
     </head>
     <body>
         <div class="conteiner">
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">F</div>
-            <div class="item">G</div>
-            <div class="item">H</div>
-            <div class="item">I</div>
-            <div class="item">K</div>
-            <div class="item">L</div>
+            <div class="item" id="i1">A</div>
+            <div class="item" id="i2">B</div>
+            <div class="item" id="i3">C</div>
         </div>
     </body>
 </html>
