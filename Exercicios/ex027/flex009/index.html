@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexible Box</title>
+        <style>
+            .conteiner {
+                background-color: red;
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            .item {
+                flex-basis: 150px;
+                text-align: center;
+                border: 1px solid black;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="item">A</div>
+            <div class="item">Contúdo menor</div>
+            <div class="item">C</div>
+            <div class="item">Contúdo um pouco maior</div>
+            <div class="item">E</div>
+            <div class="item">Contúdo muito maior que os outro</div>
+            <div class="item">G</div>
+        </div>
+    </body>
+</html>
