@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* =========== TELA MOBILE =========== */
+
+@media (max-width: 615px) {
+
+    header {
+        text-align: center;
+        padding: 10px 10px;
+
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            a {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*============ TELAS GRANDES ===========*/
+
+@media (min-width: 781px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        .opcoes {
+            margin: 14px 0px 14px 0px;
+        }
+    }
+}
